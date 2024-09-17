@@ -15,15 +15,3 @@ logging.basicConfig(
 
 
 )
-
-
-# if __name__=="__main__":
-#     logging.info("Logging has started")
-
-
-if __name__=="__main__":
-    try:
-        a =1/10
-    except Exception as e:
-        logging.info("Exceptio, divided by zero")
-        raise CustomException(e,sys) # type: ignore
